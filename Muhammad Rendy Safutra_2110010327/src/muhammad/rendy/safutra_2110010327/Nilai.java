@@ -4,175 +4,93 @@
  */
 package muhammad.rendy.safutra_2110010327;
 
-import javax.swing.JOptionPane;
 
 /**
  *
  * @author User
  */
 public class Nilai {
-    String kodeKelas;
-    String nis;
-    String nik;
-    String kodePelajaran;
-    String nilaiUts;
-    String nilaiUas;
-    String nilaiTugas;
-    String absen;
-    
-    public Nilai(String paramKodeKelas){
-        kodeKelas = paramKodeKelas;
-}
-    public Nilai(String paramKodeKelas,String paramNis){
-        kodeKelas = paramKodeKelas;
-        nis = paramNis;
-}
-    public Nilai(String paramKodeKelas,String paramNis,String paramNik){
-        kodeKelas = paramKodeKelas;
-        nis = paramNis;
-        nik = paramNik;
-}
-    public Nilai(String paramKodeKelas,String paramNis,String paramNik,String paramKodePelajaran){
-        kodeKelas = paramKodeKelas;
-        nis = paramNis;
-        nik = paramNik;
-        kodePelajaran = paramKodePelajaran;
-}
-    public Nilai(String paramKodeKelas,String paramNis,String paramNik,String paramKodePelajaran,String paramNilaiUts){
-        kodeKelas = paramKodeKelas;
-        nis = paramNis;
-        nik = paramNik;
-        kodePelajaran = paramKodePelajaran;
-        nilaiUts = paramNilaiUts;
-}
-    public Nilai(String paramKodeKelas,String paramNis,String paramNik,String paramKodePelajaran,String paramNilaiUts,String paramNilaiUas){
-        kodeKelas = paramKodeKelas;
-        nis = paramNis;
-        nik = paramNik;
-        kodePelajaran = paramKodePelajaran;
-        nilaiUts = paramNilaiUts;
-        nilaiUas = paramNilaiUas;
-}
-    public Nilai(String paramKodeKelas,String paramNis,String paramNik,String paramKodePelajaran,String paramNilaiUts,String paramNilaiUas,String paramNilaiTugas){
-        kodeKelas = paramKodeKelas;
-        nis = paramNis;
-        nik = paramNik;
-        kodePelajaran = paramKodePelajaran;
-        nilaiUts = paramNilaiUts;
-        nilaiUas = paramNilaiUas;
-        nilaiTugas = paramNilaiTugas;
-}
-    public Nilai(String paramKodeKelas,String paramNis,String paramNik,String paramKodePelajaran,String paramNilaiUts,String paramNilaiUas,String paramNilaiTugas,String paramAbsen){
-        kodeKelas = paramKodeKelas;
-        nis = paramNis;
-        nik = paramNik;
-        kodePelajaran = paramKodePelajaran;
-        nilaiUts = paramNilaiUts;
-        nilaiUas = paramNilaiUas;
-        nilaiTugas = paramNilaiTugas;
-        absen = paramAbsen;
-}
-    
-    public void setKodeKelas(String kodeKelas){
-        if (kodeKelas.equals("A1")){
-            JOptionPane.showMessageDialog(null, "Kode Kelas belum diisi");
-        }else{
-            this.kodeKelas=kodeKelas;
-        }
-    }    
-    public String getKodeKelas(){
-        return this.kodeKelas;
-    }
-    
-    
-    public void setnis(String nis){
-        if (nis.equals("8712989812")){
-            JOptionPane.showMessageDialog(null, "NIS Belum diisi");
-        }else{
-            this.nis=nis;
-        }
-    
-    }
-    
-    public String getnik(){
-        return this.nis;
-    }
-    
-    public void setnik(String nik){
-        if (nik.equals("8766231234")){
-            JOptionPane.showMessageDialog(null, "NIK Belum diisi");
-        }else{
-            this.nik=nik;
-        }
-    
-    }
-    
-    public String getnis(){
-        return this.nik;
-    }
-    
-    public void setkodePelajaran(String kodePelajaran){
-        if (kodePelajaran.equals("C1")){
-            JOptionPane.showMessageDialog(null, "Kode Pelajaran Belum diisi");
-        }else{
-            this.kodePelajaran=kodePelajaran;
-        }
-    
-    }
-    
-    public String getkodePelajaran(){
-        return this.kodePelajaran;
-    }
+private String kodeKelas;
+private String nis;
+private String nik;
+private String kodePelajaran;
+private String nilaiUts;
+private String nilaiUas;
+private String nilaiTugas;
+private String absen;
+
+public Nilai(String kodeKelas, String nis, String nik, String kodePelajaran, String nilaiUts, String nilaiUas, String nilaiTugas, String absen) {
+       this.kodeKelas = kodeKelas;
+       this.nis = nis;
+       this.nik = nik;
+       this.kodePelajaran = kodePelajaran;
+       this.nilaiUts = nilaiUts;
+       this.nilaiUas = nilaiUas;
+       this.nilaiTugas = nilaiTugas;
+       this.absen = absen;
+   }
+
+public String getkodeKelas(){
+       return kodeKelas;
+   }
    
-    public void setnilaiUts(String nilaiUts){
-        if (nilaiUts.equals("86")){
-            JOptionPane.showMessageDialog(null, "Nilai UTS Belum diisi");
-        }else{
-            this.nilaiUts=nilaiUts;
-        }
-    
-    }
-    
-    public String getnilaiUts(){
-        return this.nilaiUts;
-    }
-    
-    public void setnilaiUas(String nilaiUas){
-        if (nilaiUas.equals("79")){
-            JOptionPane.showMessageDialog(null, "Nilai UAS Belum diisi");
-        }else{
-            this.nilaiUas=nilaiUas;
-        }
-    
-    }
-    
-    public String getnilaiUas(){
-        return this.nilaiUas;
-    }
-    
-    public void setnilaiTugas(String nilaiTugas){
-        if (nilaiTugas.equals("85")){
-            JOptionPane.showMessageDialog(null, "Nilai Tugas Belum diisi");
-        }else{
-            this.nilaiTugas=nilaiTugas;
-        }
-    
-    }
-    
-    public String getnilaiTugas(){
-        return this.nilaiTugas;
-    }
-    
-    public void setabsen(String absen){
-        if (absen.equals("100")){
-            JOptionPane.showMessageDialog(null, "Nilai Absen Belum diisi");
-        }else{
-            this.absen=absen;
-        }
-    
-    }
-    
-    public String getabsen(){
-        return this.absen;
-    }
+public void setkodeKelas(String kodeKelas) {
+       this.kodeKelas = kodeKelas;
+   }
+   
+public String getnis(){
+       return nis;
+   }
+   
+public void setnis(String nis) {
+       this.nis = nis;
+   }
+
+public String getnik(){
+       return nik;
+   }
+   
+public void setnik(String nik) {
+       this.nik = nik;
+   }
+
+public String getkodePelajaran(){
+       return kodePelajaran;
+   }
+   
+public void setkodePelajaran(String kodePelajaran) {
+       this.kodePelajaran = kodePelajaran;
+}
+
+public String getnilaiUts(){
+       return nilaiUts;
+   }
+   
+public void setnilaiUts(String nilaiUts) {
+       this.nilaiUts = nilaiUts;
+   }
+   
+public String getnilaiUas(){
+       return nilaiUas ;
+   }
+
+public void setnilaiUas(String nilaiUas) {
+       this.nilaiUas = nilaiUas;
+   }
+
+public String getnilaiTugas(){
+       return nilaiTugas;
+   }
+   
+public void setnilaiTugas(String nilaiTugas) {
+       this.nilaiTugas = nilaiTugas;
+   }
+   
+public String getabsen(){
+       return absen;
+   }
+   
+public void setabsen(String absen) {
+       this.absen = absen;
+   }  
 }    
